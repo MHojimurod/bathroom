@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "next start -p 3001",
+    "start": "vite preview --port 3001",
     "preview": "vite preview"
   },
   "dependencies": {
