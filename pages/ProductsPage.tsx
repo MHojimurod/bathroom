@@ -92,8 +92,8 @@ const ProductsPage: React.FC = () => {
                 </div>
             ) : (
                 <div className="flex flex-col items-center justify-center h-96 bg-gray-50 rounded-lg">
-                    <h3 className="text-2xl font-semibold text-gray-700">No Products Found</h3>
-                    <p className="text-gray-500 mt-2">There are no products available in this category yet.</p>
+                    <h3 className="text-2xl font-semibold text-gray-700">Hech qanday mahsulot topilmadi</h3>
+                    <p className="text-gray-500 mt-2">Bu ketegoriyada hali hech qanday mahsulot mavjud emas.</p>
                 </div>
             )}
           </main>

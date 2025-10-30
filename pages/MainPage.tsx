@@ -73,8 +73,8 @@ const MainPage: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Featured Selections for Discerning Tastes</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">A curated showcase of our most popular and innovative bathroom solutions.</p>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Nozik did egalari uchun tanlab olingan to‘plamlar</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">Eng mashhur va innovatsion yechimlarimizdan ehtiyotkorlik bilan tanlab tuzilgan ko‘rgazma.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {FEATURED_PRODUCTS.map((product) => (
@@ -83,7 +83,7 @@ const MainPage: React.FC = () => {
           </div>
           <div className="text-center">
             <Link to="/products" className="bg-gray-800 text-white font-semibold py-3 px-8 rounded-md hover:bg-gray-900 transition-colors duration-300">
-              See All Products
+            Barcha Mahsulotlarni Ko‘rish
             </Link>
           </div>
         </div>

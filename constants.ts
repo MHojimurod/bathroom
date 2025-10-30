@@ -29,19 +29,19 @@ export const MAIN_HERO_SLIDES: HeroSlide[] = [
   },
   {
     image: '/images/slide3.webp',
-    headline: 'Innovating Your Everyday Rituals',
-    subHeadline: 'Smart Solutions for Modern Living.',
-    ctaText: 'View Smart Collections',
-    ctaLink: '/products',
+    headline: 'Zamonaviy hayot uchun aqlli yechimlar',
+    subHeadline: '',
+    ctaText: '',
+    ctaLink: '',
   },
 ];
 
 export const PRODUCTS_HERO_SLIDES: HeroSlide[] = [
   {
     image: 'https://picsum.photos/1920/1080?random=4',
-    headline: 'Explore Our Extensive Collections',
-    subHeadline: 'Uncover the perfect pieces to complete your dream bathroom.',
-    ctaText: 'View All Categories',
+    headline: 'Boy va keng qamrovli to‘plamlarimiz bilan tanishing',
+    subHeadline: '',
+    ctaText: 'Barcha kategoriyalarni ko‘rish',
     ctaLink: '#categories',
   },
 ];
