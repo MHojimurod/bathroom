@@ -1,10 +1,12 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { NAV_LINKS } from '../constants';
 import { FacebookIcon, InstagramIcon, TelegramIcon } from './IconComponents';
+import { useLanguage } from '../context/LanguageContext';
+import Navbar from './Navlink';
 
 const Footer: React.FC = () => {
+  const { t } = useLanguage();
   const socialLinks = [
     { name: 'Telegram', icon: <TelegramIcon />, url: 'https://t.me/CasaBellauz' },
     { name: 'Instagram', icon: <InstagramIcon />, url: 'https://instagram.com/casabellauz/' },
@@ -19,28 +21,34 @@ const Footer: React.FC = () => {
             <Link to="/" className="text-3xl font-bold tracking-tight text-white">
               <img src="/images/logo-white.webp" width="200" alt="" />
             </Link>
-            <p className="mt-2 text-gray-400 max-w-xs">Zamonaviy uy uchun premium hammom va sanitariya-texnik buyumlar.</p>
+            <p className="mt-2 text-gray-400 max-w-xs">
+              {t.footer.slogan}
+            </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
             <div>
-              <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">Navigatsiya</h2>
+              <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">
+                {t.footer.navigation}
+              </h2>
+              <Navbar />
+            </div>
+            <div>
+              <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">
+                {t.footer.legalSection}
+              </h2>
               <ul className="space-y-3">
-                {NAV_LINKS.map(link => (
-                  <li key={link.path}>
-                    <Link to={link.path} className="hover:text-white transition-colors duration-300">{link.label}</Link>
-                  </li>
-                ))}
+                <li><a href="#" className="hover:text-white transition-colors duration-300">
+                  {t.footer.legal.privacyPolicy}
+                  </a></li>
+                <li><a href="#" className="hover:text-white transition-colors duration-300">
+                  {t.footer.legal.termsOfUse}
+                  </a></li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">Huquqiy</h2>
-              <ul className="space-y-3">
-                <li><a href="#" className="hover:text-white transition-colors duration-300">Maxfiylik siyosati</a></li>
-                <li><a href="#" className="hover:text-white transition-colors duration-300">Foydalanish shartlari</a></li>
-              </ul>
-            </div>
-             <div>
-              <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">Ijtimoiy tarmoqlar</h2>
+              <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">
+                {t.footer.socialMedia}
+              </h2>
               <div className="flex space-x-4">
                 {socialLinks.map(social => (
                   <a target="_blank" key={social.name} href={social.url} className="text-gray-400 hover:text-white transition-colors duration-300">
@@ -53,7 +61,7 @@ const Footer: React.FC = () => {
         </div>
         <hr className="my-8 border-gray-700" />
         <div className="text-center text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Casabella. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Casabella. {t.footer.rights}</p>
         </div>
       </div>
     </footer>

@@ -1,16 +1,8 @@
-import type { NavLink, HeroSlide, Achievement, ProductCategory, Product } from './types';
+import type { HeroSlide, Achievement, ProductCategory, Product } from './types';
 
 export const TELEGRAM_BOT_TOKEN = '7755094571:AAEezeM41_YaLdYIPubxruqan6Fu5DG62Y0';
 export const TELEGRAM_CHAT_ID = '-1002832678850';
 
-
-export const NAV_LINKS: NavLink[] = [
-  { label: 'Bosh Sahifa', path: '/' },
-  { label: 'Mahsulotlar', path: '/products' },
-  { label: 'Biz Haqimizda', path: '/about' },
-  { label: 'Aloqa', path: '/contact' },
-  { label: 'Hamkorlik', path: '/partnership' },
-];
 
 export const MAIN_HERO_SLIDES: HeroSlide[] = [
   {

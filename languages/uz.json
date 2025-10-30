@@ -1,0 +1,74 @@
+{
+    "header": {
+        "navLinks": {
+            "home": "Bosh Sahifa",
+            "products": "Mahsulotlar",
+            "about": "Biz Haqimizda",
+            "contact": "Aloqa",
+            "partnership": "Hamkorlik"
+        },
+        "languages": {
+            "uz": "Oʻzbek",
+            "ru": "Русский",
+            "en": "English"
+        }
+    },
+    "mainPage": {
+        "achievementsTitle": "Mukammallik va ishonch merosi",
+        "achievementsDesc": "Sifat va mijozlar mamnuniyatiga bo‘lgan sadoqatimiz o‘zini o‘zi namoyon etadi.",
+        "whatWeSellTitle": "Bizning maxsus to'plamlarimizni kashf eting",
+        "whatWeSellDesc": "Abadiy klassikalardan tortib zamonaviy dizaynlargacha — biz shakl va qulaylikning mukammal uyg'unligini taqdim etamiz.",
+        "featuredTitle": "Nozik did egalari uchun tanlab olingan to‘plamlar",
+        "featuredDesc": "Eng mashhur va innovatsion yechimlarimizdan ehtiyotkorlik bilan tanlab tuzilgan ko‘rgazma.",
+        "seeAllProducts": "Barcha Mahsulotlarni Ko‘rish"
+    },
+    "achievement": {
+        "products": "Mahsulotlar",
+        "clients": "Mijozlar",
+        "partners": "Hamkorlar",
+        "branches": "Filiallar"
+    },
+    "footer": {
+        "slogan": "Zamonaviy uy uchun premium hammom va sanitariya-texnik buyumlar.",
+        "rights": "Barcha huquqlar himoyalangan.",
+        "legal": {
+            "privacyPolicy": "Maxfiylik siyosati",
+            "termsOfUse": "Foydalanish shartlari"
+        },
+        "socialMedia": "Ijtimoiy tarmoqlar",
+        "navigation": "Navigatsiya",
+        "legalSection": "Huquqiy"
+    },
+    "contactUs": {
+        "title": "Mutaxassislarimiz bilan bog'laning",
+        "description": "Mahsulotlarimiz haqida savolingiz bo'ladimi, dizayn bo'yicha maslahatga muhtojmisiz yoki yordamga muhtojmisiz, bizning jamoamiz sizga yordam berishga tayyor.",
+        "form": {
+            "name": "Ism",
+            "email": "Elektron pochta (majburiy emas)",
+            "phone": "Telefon",
+            "message": "Xabar (majburiy emas)",
+            "submit": "Xabar yuborish",
+            "success": "✅ Xabar muvaffaqiyatli yuborildi!",
+            "sending": "Xabaringiz yuborilmoqda...",
+            "contact": "Bog'laning"
+        },
+        "contactInfo": {
+            "phone": "Telefon",
+            "email": "Elektron pochta",
+            "address": "Manzil",
+            "addressValue": "Toshkent, O'zbekiston"
+        },
+        "workingHours": "Ish vaqti",
+        "days": "Dushanba - Juma: 9:00 - 18:00",
+        "Saturday": "Shanba: 10:00 - 16:00",
+        "Sunday": "Yakshanba: Yopiq",
+        "ourBranches": "Bizning Filiallarimiz",
+        "branches": {
+            "branch1": "Usta Shirin ko‘chasi, 122-uy, Toshkent",
+            "branch2": "Katta Darxon ko‘chasi, 15-uy, 53–54-do‘kon, Toshkent",
+            "branch3": "Usta Shirin ko‘chasi, 125-uy, 1–39-do‘kon, Toshkent",
+            "branch4": "Bek Tupi bozori, 53-do‘kon va 1–32-do‘konlar, Toshkent"
+        }
+
+    }
+}
