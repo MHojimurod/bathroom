@@ -31,7 +31,7 @@ const Header: React.FC = () => {
     <header className="sticky top-0 bg-white bg-opacity-90 backdrop-blur-md shadow-sm z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <NavLink to="/" className="text-2xl font-bold tracking-tight text-gray-900">
-          AURA
+          <img src="/images/logo.webp" width="100" alt="" />
         </NavLink>
         
         <nav className="hidden md:block">

@@ -1,5 +1,9 @@
 import type { NavLink, HeroSlide, Achievement, ProductCategory, Product } from './types';
 
+export const TELEGRAM_BOT_TOKEN = '7755094571:AAEezeM41_YaLdYIPubxruqan6Fu5DG62Y0';
+export const TELEGRAM_CHAT_ID = '-1002832678850';
+
+
 export const NAV_LINKS: NavLink[] = [
   { label: 'Bosh Sahifa', path: '/' },
   { label: 'Maxsulotlar', path: '/products' },
@@ -11,17 +15,17 @@ export const NAV_LINKS: NavLink[] = [
 export const MAIN_HERO_SLIDES: HeroSlide[] = [
   {
     image: '/images/slide1.jpg',
-    headline: 'Experience Unrivaled Elegance',
-    subHeadline: 'Redefining Luxury in Every Detail of Your Bathroom.',
-    ctaText: 'Explore Our Collections',
+    headline: 'Taqqoslanmas nafislikni his eting',
+    subHeadline: '',
+    ctaText: 'Kolleksiyamiz bilan tanishing',
     ctaLink: '/products',
   },
   {
     image: '/images/slide2.jpg',
-    headline: 'Craftsmanship That Lasts',
-    subHeadline: 'Superior Materials. Impeccable Design. Built for Life.',
-    ctaText: 'Discover Our Quality',
-    ctaLink: '/products',
+    headline: '',
+    subHeadline: '',
+    ctaText: '',
+    ctaLink: '',
   },
   {
     image: '/images/slide3.webp',
@@ -43,17 +47,17 @@ export const PRODUCTS_HERO_SLIDES: HeroSlide[] = [
 ];
 
 export const ACHIEVEMENTS: Achievement[] = [
-  { value: 250, label: 'Products' },
-  { value: 10000, label: 'Happy Users' },
-  { value: 150, label: 'Trusted Partners' },
-  { value: 25, label: 'Global Affiliates' },
+  { value: 250, label: 'Mahsulotlar' },
+  { value: 10000, label: 'Foydalanuvchilar' },
+  { value: 150, label: 'Hamkrorlar' },
+  { value: 25, label: 'Filiallar' },
 ];
 
 export const WHAT_WE_SELL = [
-    { name: 'Luxurious Bathtubs', image: '/images/photo1.png' },
-    { name: 'Innovative Showers', image: '/images/photo2.png' },
-    { name: 'Designer Vanities', image: '/images/photo3.png' },
-    { name: 'Smart Toilets', image: '/images/photo4.png' },
+    { name: 'Hashamatli vannalar', image: '/images/photo1.png' },
+    { name: 'Innovatsion dushlar', image: '/images/photo2.png' },
+    { name: 'Qulay rakvinalar', image: '/images/photo3.png' },
+    { name: 'Aqlli hojatxonalar', image: '/images/photo4.png' },
 ]
 
 const ALL_PRODUCTS_LIST: Omit<Product, 'image' | 'gallery'>[] = [

@@ -38,8 +38,8 @@ const MainPage: React.FC = () => {
       {/* Achievements Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">A Legacy of Excellence and Trust</h2>
-          <p className="text-gray-600 max-w-3xl mx-auto mb-12">Our commitment to quality and customer satisfaction speaks for itself.</p>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Mukammallik va ishonch merosi</h2>
+          <p className="text-gray-600 max-w-3xl mx-auto mb-12">Sifat va mijozlar mamnuniyatiga bo‘lgan sadoqatimiz o‘zini o‘zi namoyon etadi.</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {ACHIEVEMENTS.map((ach) => (
               <div key={ach.label} className="p-6 bg-white rounded-lg shadow-md">
@@ -54,8 +54,8 @@ const MainPage: React.FC = () => {
       {/* What We Sell Section */}
       <section className="py-20">
         <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Discover Our Signature Collections</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto mb-12">From timeless classics to cutting-edge designs, we offer the perfect blend of form and function.</p>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Bizning maxsus to‘plamlarimizni kashf eting</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto mb-12">Abadiy klassikalardan tortib zamonaviy dizaynlargacha — biz shakl va qulaylikning mukammal uyg‘unligini taqdim etamiz.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {WHAT_WE_SELL.map(item => (
                     <div key={item.name} className="group relative overflow-hidden rounded-lg shadow-lg">

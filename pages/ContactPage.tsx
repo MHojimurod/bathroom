@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } from "../constants";
 
 const ContactPage: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -16,15 +17,40 @@ const ContactPage: React.FC = () => {
         setFormData(prevState => ({ ...prevState, [name]: value }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setFormStatus('Sending...');
-        // Simulate form submission
-        setTimeout(() => {
-            setFormStatus('Message sent successfully!');
-            setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-        }, 2000);
-    };
+        setFormStatus('Yuborilmoqda...');
+      
+        const message = `
+      📩 Yangi xabar veb-saytdan:
+      
+      👤 Ism: ${formData.name}
+      📧 Email: ${formData.email}
+      📞 Telefon: ${formData.phone}
+      📝 Mavzu: ${formData.subject}
+      💬 Xabar: ${formData.message}
+        `;
+      
+        try {
+          // Telegram API orqali yuborish
+          await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              chat_id: TELEGRAM_CHAT_ID,
+              text: message,
+              parse_mode: 'HTML',
+            }),
+          });
+      
+          // Muvaffaqiyatli yuborilgandan keyin
+          setFormStatus('✅ Xabar muvaffaqiyatli yuborildi!');
+          setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        } catch (error) {
+          console.error('Telegramga yuborishda xatolik:', error);
+          setFormStatus('❌ Xabar yuborilmadi. Iltimos, keyinroq urinib ko‘ring.');
+        }
+      };
 
     return (
         <div className="bg-gray-50">
@@ -52,7 +78,7 @@ const ContactPage: React.FC = () => {
                             <textarea name="message" placeholder="Habar" rows={5} value={formData.message} onChange={handleChange} required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-800 focus:outline-none"></textarea>
                             <div>
                                 <button type="submit" className="w-full bg-gray-800 text-white font-semibold py-3 px-6 rounded-md hover:bg-gray-900 transition-colors duration-300">
-                                    Send Message
+                                Xabar yuborish
                                 </button>
                                 {formStatus && <p className="mt-4 text-center text-gray-600">{formStatus}</p>}
                             </div>

@@ -2,14 +2,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { NAV_LINKS } from '../constants';
-import { FacebookIcon, InstagramIcon, PinterestIcon, LinkedinIcon } from './IconComponents';
+import { FacebookIcon, InstagramIcon, TelegramIcon } from './IconComponents';
 
 const Footer: React.FC = () => {
   const socialLinks = [
-    { name: 'Facebook', icon: <FacebookIcon />, url: '#' },
-    { name: 'Instagram', icon: <InstagramIcon />, url: '#' },
-    { name: 'Pinterest', icon: <PinterestIcon />, url: '#' },
-    { name: 'LinkedIn', icon: <LinkedinIcon />, url: '#' },
+    { name: 'Telegram', icon: <TelegramIcon />, url: 'https://t.me/CasaBellauz' },
+    { name: 'Instagram', icon: <InstagramIcon />, url: 'https://instagram.com/casabellauz/' },
+    { name: 'Facebook', icon: <FacebookIcon />, url: 'https://facebook.com/casabellauz/' },
   ];
 
   return (
@@ -18,13 +17,13 @@ const Footer: React.FC = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-8 md:mb-0">
             <Link to="/" className="text-3xl font-bold tracking-tight text-white">
-              AURA
+              <img src="/images/logo-white.webp" width="200" alt="" />
             </Link>
-            <p className="mt-2 text-gray-400 max-w-xs">Premium bathroom and sanitary ware for the modern home.</p>
+            <p className="mt-2 text-gray-400 max-w-xs">Zamonaviy uy uchun premium hammom va sanitariya-texnik buyumlar.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
             <div>
-              <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">Navigation</h2>
+              <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">Navigatsiya</h2>
               <ul className="space-y-3">
                 {NAV_LINKS.map(link => (
                   <li key={link.path}>
@@ -34,17 +33,17 @@ const Footer: React.FC = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">Legal</h2>
+              <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">Huquqiy</h2>
               <ul className="space-y-3">
-                <li><a href="#" className="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors duration-300">Terms of Use</a></li>
+                <li><a href="#" className="hover:text-white transition-colors duration-300">Maxfiylik siyosati</a></li>
+                <li><a href="#" className="hover:text-white transition-colors duration-300">Foydalanish shartlari</a></li>
               </ul>
             </div>
              <div>
-              <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">Connect</h2>
+              <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">Ijtimoiy tarmoqlar</h2>
               <div className="flex space-x-4">
                 {socialLinks.map(social => (
-                  <a key={social.name} href={social.url} className="text-gray-400 hover:text-white transition-colors duration-300">
+                  <a target="_blank" key={social.name} href={social.url} className="text-gray-400 hover:text-white transition-colors duration-300">
                     {social.icon}
                   </a>
                 ))}
@@ -54,7 +53,7 @@ const Footer: React.FC = () => {
         </div>
         <hr className="my-8 border-gray-700" />
         <div className="text-center text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Aura Bathware. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Casabella. All rights reserved.</p>
         </div>
       </div>
     </footer>

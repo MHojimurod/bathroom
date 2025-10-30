@@ -1,7 +1,6 @@
-
-import React, { useState, useEffect, useCallback } from 'react';
-import { Link } from 'react-router-dom';
-import type { HeroSlide } from '../types';
+import React, { useState, useEffect, useCallback } from "react";
+import { Link } from "react-router-dom";
+import type { HeroSlide } from "../types";
 
 interface HeroSliderProps {
   slides: HeroSlide[];
@@ -24,12 +23,15 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
   };
 
   return (
-    <div className="relative w-full overflow-hidden" style={{height: 'calc(100vh - 64px)'}}>
+    <div
+      className="relative w-full overflow-hidden"
+      style={{ height: "calc(100vh - 64px)" }}
+    >
       {slides.map((slide, index) => (
         <div
           key={index}
           className={`absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
-            index === currentIndex ? 'opacity-100' : 'opacity-0'
+            index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
           style={{ backgroundImage: `url(${slide.image})` }}
         >
@@ -43,12 +45,15 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
         <p className="text-lg md:text-xl max-w-2xl mb-8 animate-fade-in-up">
           {slides[currentIndex].subHeadline}
         </p>
-        <Link
-          to={slides[currentIndex].ctaLink}
-          className="bg-white text-gray-900 font-semibold py-3 px-8 rounded-full hover:bg-gray-200 transition-transform transform hover:scale-105 duration-300 animate-fade-in-up"
-        >
-          {slides[currentIndex].ctaText}
-        </Link>
+        {slides[currentIndex].ctaLink &&
+          slides[currentIndex].ctaLink !== "" && (
+            <Link
+              to={slides[currentIndex].ctaLink}
+              className="bg-white text-gray-900 font-semibold py-3 px-8 rounded-full hover:bg-gray-200 transition-transform transform hover:scale-105 duration-300 animate-fade-in-up"
+            >
+              {slides[currentIndex].ctaText}
+            </Link>
+          )}
       </div>
       <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex space-x-2">
         {slides.map((_, index) => (
@@ -56,7 +61,9 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
             key={index}
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentIndex ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white/75'
+              index === currentIndex
+                ? "bg-white scale-125"
+                : "bg-white/50 hover:bg-white/75"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
