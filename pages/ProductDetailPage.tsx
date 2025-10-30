@@ -39,8 +39,8 @@ const ProductDetailPage: React.FC = () => {
       <div className="container mx-auto px-6 py-12">
         {/* Breadcrumbs */}
         <nav className="text-sm text-gray-500 mb-8">
-          <Link to="/" className="hover:text-gray-800">Home</Link> &gt; 
-          <Link to="/products" className="hover:text-gray-800"> Products</Link> &gt; 
+          <Link to="/" className="hover:text-gray-800">Bosh sahifa</Link> &gt; 
+          <Link to="/products" className="hover:text-gray-800"> Mahsulotlar</Link> &gt; 
           <span className="text-gray-800"> {product.name}</span>
         </nav>
 
@@ -70,7 +70,7 @@ const ProductDetailPage: React.FC = () => {
             <p className="text-gray-600 leading-relaxed mb-8">{product.longDescription}</p>
 
             <div className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">Key Features</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">Asosiy xususiyatlar</h3>
               <ul className="space-y-3 text-gray-600">
                 {product.features.map((feature, index) => (
                   <li key={index} className="flex items-start">
@@ -82,13 +82,13 @@ const ProductDetailPage: React.FC = () => {
             </div>
             
             <div className="mb-8">
-                 <button className="w-full bg-gray-800 text-white font-semibold py-4 px-8 rounded-md hover:bg-gray-900 transition-colors duration-300 text-lg">
-                    Inquire Now
-                 </button>
+                 <a href="tel:+998773164444" className="w-full bg-gray-800 text-white font-semibold py-4 px-8 rounded-md hover:bg-gray-900 transition-colors duration-300 text-lg">
+                    Hoziroq bog'laning
+                 </a>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">Specifications</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">Texnik xususiyatlar</h3>
               <div className="space-y-2">
                 {product.specifications.map((spec, index) => (
                   <div key={index} className="flex justify-between text-sm">
@@ -104,7 +104,7 @@ const ProductDetailPage: React.FC = () => {
         {/* Related Products */}
         {relatedProducts.length > 0 && (
           <div className="mt-20 pt-12 border-t">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Related Products</h2>
+            <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">O'xshash mahsulotlar</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {relatedProducts.map(related => (
                 <ProductCard key={related.id} product={related} />

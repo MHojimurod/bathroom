@@ -54,8 +54,8 @@ const MainPage: React.FC = () => {
       {/* What We Sell Section */}
       <section className="py-20">
         <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Bizning maxsus to‘plamlarimizni kashf eting</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto mb-12">Abadiy klassikalardan tortib zamonaviy dizaynlargacha — biz shakl va qulaylikning mukammal uyg‘unligini taqdim etamiz.</p>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Bizning maxsus to'plamlarimizni kashf eting</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto mb-12">Abadiy klassikalardan tortib zamonaviy dizaynlargacha — biz shakl va qulaylikning mukammal uyg'unligini taqdim etamiz.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {WHAT_WE_SELL.map(item => (
                     <div key={item.name} className="group relative overflow-hidden rounded-lg shadow-lg">
