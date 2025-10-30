@@ -10,21 +10,21 @@ export const NAV_LINKS: NavLink[] = [
 
 export const MAIN_HERO_SLIDES: HeroSlide[] = [
   {
-    image: 'images/slide1.jpg',
+    image: '/images/slide1.jpg',
     headline: 'Experience Unrivaled Elegance',
     subHeadline: 'Redefining Luxury in Every Detail of Your Bathroom.',
     ctaText: 'Explore Our Collections',
     ctaLink: '/products',
   },
   {
-    image: 'images/slide2.jpg',
+    image: '/images/slide2.jpg',
     headline: 'Craftsmanship That Lasts',
     subHeadline: 'Superior Materials. Impeccable Design. Built for Life.',
     ctaText: 'Discover Our Quality',
     ctaLink: '/products',
   },
   {
-    image: 'images/slide3.webp',
+    image: '/images/slide3.webp',
     headline: 'Innovating Your Everyday Rituals',
     subHeadline: 'Smart Solutions for Modern Living.',
     ctaText: 'View Smart Collections',
@@ -50,10 +50,10 @@ export const ACHIEVEMENTS: Achievement[] = [
 ];
 
 export const WHAT_WE_SELL = [
-    { name: 'Luxurious Bathtubs', image: 'images/photo1.png' },
-    { name: 'Innovative Showers', image: 'images/photo2.png' },
-    { name: 'Designer Vanities', image: 'images/photo3.png' },
-    { name: 'Smart Toilets', image: 'images/photo4.png' },
+    { name: 'Luxurious Bathtubs', image: '/images/photo1.png' },
+    { name: 'Innovative Showers', image: '/images/photo2.png' },
+    { name: 'Designer Vanities', image: '/images/photo3.png' },
+    { name: 'Smart Toilets', image: '/images/photo4.png' },
 ]
 
 const ALL_PRODUCTS_LIST: Omit<Product, 'image' | 'gallery'>[] = [

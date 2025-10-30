@@ -5,7 +5,7 @@ const AboutUsPage: React.FC = () => {
   return (
     <div className="bg-white">
       <div className="relative h-80 bg-gray-900">
-        <img src="images/about-us-banner.png" alt="Craftsmanship" className="w-full h-full object-cover opacity-40" />
+        <img src="/images/about-us-banner.png" alt="Craftsmanship" className="w-full h-full object-cover opacity-40" />
         <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-5xl font-bold text-white tracking-tight">Hashamat San'ati, Qulaylik Falsafasi</h1>
         </div>
@@ -21,7 +21,7 @@ const AboutUsPage: React.FC = () => {
               <p>Sifat, nafislik va soddalik - bizning asosiy qadriyatlarimiz. Har bir mahsulot sizning uyingizdagi iliqlik va uslub ramzi.</p>
             </div>
             <div>
-              <img src="images/about-us-2.jpg" alt="Our design process" className="rounded-lg shadow-xl"/>
+              <img src="/images/about-us-2.jpg" alt="Our design process" className="rounded-lg shadow-xl"/>
             </div>
           </div>
         </section>
@@ -35,7 +35,7 @@ const AboutUsPage: React.FC = () => {
               <p>Siz tanlagan har bir mahsulot sifat va qulaylik kafolatiga ega. Biz doimo sizning ehtiyojlaringizni eshitamiz va har bir detaldan mukammallik yaratishga intilamiz.</p>
             </div>
             <div className="md:order-1">
-              <img src="images/about-us-3.jpg" alt="Sustainable materials" className="rounded-lg shadow-xl"/>
+              <img src="/images/about-us-3.jpg" alt="Sustainable materials" className="rounded-lg shadow-xl"/>
             </div>
           </div>
         </section>
