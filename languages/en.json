@@ -1,73 +1,82 @@
 {
-    "header": {
-        "navLinks": {
-            "home": "Home",
-            "products": "Products",
-            "about": "About Us",
-            "contact": "Contact",
-            "partnership": "Partnership"
-        },
-        "languages": {
-            "uz": "Oʻzbek",
-            "ru": "Русский",
-            "en": "English"
-        }
+  "header": {
+    "navLinks": {
+      "home": "Home",
+      "products": "Products",
+      "about": "About Us",
+      "contact": "Contact",
+      "partnership": "Partnership"
     },
-    "mainPage": {
-        "achievementsTitle": "A Legacy of Excellence and Trust",
-        "achievementsDesc": "Our dedication to quality and customer satisfaction speaks for itself.",
-        "whatWeSellTitle": "Discover Our Exclusive Collections",
-        "whatWeSellDesc": "From timeless classics to modern designs — we offer the perfect harmony of form and comfort.",
-        "featuredTitle": "Curated Collections for Refined Taste",
-        "featuredDesc": "A carefully selected showcase of our most popular and innovative solutions.",
-        "seeAllProducts": "View All Products"
+    "languages": {
+      "uz": "Oʻzbek",
+      "ru": "Русский",
+      "en": "English"
+    }
+  },
+  "mainPage": {
+    "achievementsTitle": "A Legacy of Excellence and Trust",
+    "achievementsDesc": "Our dedication to quality and customer satisfaction speaks for itself.",
+    "whatWeSellTitle": "Discover Our Exclusive Collections",
+    "whatWeSellDesc": "From timeless classics to modern designs — we offer the perfect harmony of form and comfort.",
+    "featuredTitle": "Curated Collections for Refined Taste",
+    "featuredDesc": "A carefully selected showcase of our most popular and innovative solutions.",
+    "seeAllProducts": "View All Products"
+  },
+  "achievement": {
+    "products": "Products",
+    "clients": "Clients",
+    "partners": "Partners",
+    "branches": "Branches"
+  },
+  "footer": {
+    "slogan": "Premium bathroom and sanitary ware for the modern home.",
+    "rights": "All rights reserved.",
+    "legal": {
+      "privacyPolicy": "Privacy Policy",
+      "termsOfUse": "Terms of Use"
     },
-    "achievement": {
-        "products": "Products",
-        "clients": "Clients",
-        "partners": "Partners",
-        "branches": "Branches"
+    "socialMedia": "Social Media",
+    "navigation": "Navigation",
+    "legalSection": "Legal"
+  },
+  "contactUs": {
+    "title": "Get in Touch with Our Experts",
+    "description": "Have questions about our products, need design advice, or require assistance? Our team is ready to help you.",
+    "form": {
+      "name": "Name",
+      "email": "Email (optional)",
+      "phone": "Phone",
+      "message": "Message (optional)",
+      "submit": "Send Message",
+      "success": "✅ Message sent successfully!",
+      "sending": "Your message is being sent...",
+      "contact": "Contact"
     },
-    "footer": {
-        "slogan": "Premium bathroom and sanitary ware for the modern home.",
-        "rights": "All rights reserved.",
-        "legal": {
-            "privacyPolicy": "Privacy Policy",
-            "termsOfUse": "Terms of Use"
-        },
-        "socialMedia": "Social Media",
-        "navigation": "Navigation",
-        "legalSection": "Legal"
+    "contactInfo": {
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "addressValue": "Tashkent, Uzbekistan"
     },
-    "contactUs": {
-        "title": "Get in Touch with Our Experts",
-        "description": "Have questions about our products, need design advice, or require assistance? Our team is ready to help you.",
-        "form": {
-            "name": "Name",
-            "email": "Email (optional)",
-            "phone": "Phone",
-            "message": "Message (optional)",
-            "submit": "Send Message",
-            "success": "✅ Message sent successfully!",
-            "sending": "Your message is being sent...",
-            "contact": "Contact"
-        },
-        "contactInfo": {
-            "phone": "Phone",
-            "email": "Email",
-            "address": "Address",
-            "addressValue": "Tashkent, Uzbekistan"
-        },
-        "workingHours": "Working Hours",
-        "days": "Monday - Friday: 9:00 AM - 6:00 PM",
-        "Saturday": "Saturday: 10:00 AM - 4:00 PM",
-        "Sunday": "Sunday: Closed",
-        "ourBranches": "Our Branches",
-        "branches": {
-            "branch1": "Usta Shirin Street, House 122, Tashkent",
-            "branch2": "Katta Darxon Street, House 15, Shops 53-54, Tashkent",
-            "branch3": "Usta Shirin Street, House 125, Shops 1-39, Tashkent",
-            "branch4": "Bek Tupi Market, Shops 53 and 1-32, Tashkent"
-        }   
-}
+    "workingHours": "Working Hours",
+    "days": "Monday - Friday: 9:00 AM - 6:00 PM",
+    "Saturday": "Saturday: 10:00 AM - 4:00 PM",
+    "Sunday": "Sunday: Closed",
+    "ourBranches": "Our Branches",
+    "branches": {
+      "branch1": "Usta Shirin Street, House 122, Tashkent",
+      "branch2": "Katta Darxon Street, House 15, Shops 53-54, Tashkent",
+      "branch3": "Usta Shirin Street, House 125, Shops 1-39, Tashkent",
+      "branch4": "Bek Tupi Market, Shops 53 and 1-32, Tashkent"
+    }
+  },
+  "aboutUs": {
+    "title": "The Art of Luxury, The Philosophy of Comfort",
+    "missionTitle": "Our Story and Philosophy",
+    "missionDesc": " - the harmony of beauty and comfort. We aim to transform every home into a modern, cozy, and unique space.",
+    "missionDesc2": "Quality, elegance, and simplicity - our core values. Every product symbolizes warmth and style in your home.",
+    "visionTitle": "Our Commitment to You",
+    "visionDesc": " values every customer. For us, it's not just about sales — it's about a bond of trust and care.",
+    "visionDesc2": "Every product you choose comes with a guarantee of quality and comfort. We always listen to your needs and strive to create perfection in every detail."
+  }
 }

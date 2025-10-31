@@ -3,7 +3,6 @@ import HeroSlider from '../components/HeroSlider';
 import ProductCard from '../components/ProductCard';
 import { PRODUCTS_HERO_SLIDES, PRODUCT_CATEGORIES, ALL_PRODUCTS } from '../constants';
 import type { Product, ProductCategory } from '../types';
-import { log } from 'console';
 
 const ProductsPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -26,7 +25,6 @@ const ProductsPage: React.FC = () => {
 
   const filteredProducts = useMemo<Product[]>(() => {
     let products = ALL_PRODUCTS;
-    console.log(products);
     
     if (selectedCategory !== 'all') {
       products = products.filter(p => p.category === selectedCategory);
