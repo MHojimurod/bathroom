@@ -34,19 +34,6 @@ const Footer: React.FC = () => {
             </div>
             <div>
               <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">
-                {t.footer.legalSection}
-              </h2>
-              <ul className="space-y-3">
-                <li><a href="#" className="hover:text-white transition-colors duration-300">
-                  {t.footer.legal.privacyPolicy}
-                  </a></li>
-                <li><a href="#" className="hover:text-white transition-colors duration-300">
-                  {t.footer.legal.termsOfUse}
-                  </a></li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-4 text-sm font-semibold text-gray-100 uppercase tracking-wider">
                 {t.footer.socialMedia}
               </h2>
               <div className="flex space-x-4">

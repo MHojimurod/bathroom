@@ -6,21 +6,22 @@
       "about": "About Us",
       "contact": "Contact",
       "partnership": "Partnership"
-    },
-    "languages": {
-      "uz": "Oʻzbek",
-      "ru": "Русский",
-      "en": "English"
     }
   },
   "mainPage": {
-    "achievementsTitle": "A Legacy of Excellence and Trust",
-    "achievementsDesc": "Our dedication to quality and customer satisfaction speaks for itself.",
-    "whatWeSellTitle": "Discover Our Exclusive Collections",
-    "whatWeSellDesc": "From timeless classics to modern designs — we offer the perfect harmony of form and comfort.",
-    "featuredTitle": "Curated Collections for Refined Taste",
-    "featuredDesc": "A carefully selected showcase of our most popular and innovative solutions.",
-    "seeAllProducts": "View All Products"
+    "achievementsTitle": "The perfect solution for a comfortable life",
+    "achievementsDesc": "You deserve the best!",
+    "whatWeSellTitle": "Casabella - quality, guarantee, and comfort",
+    "whatWeSellDesc": "We offer you only brands and products that have been tested for 15 years.",
+    "featuredTitle": "New Collections",
+    "featuredDesc": "The latest collections from top designers and famous brands.",
+    "seeAllProducts": "View All Products",
+    "slide": {
+      "slide1": "",
+      "slide2": "",
+      "slide3": "",
+      "slideButton": "More details"
+    }
   },
   "achievement": {
     "products": "Products",
@@ -31,13 +32,8 @@
   "footer": {
     "slogan": "Premium bathroom and sanitary ware for the modern home.",
     "rights": "All rights reserved.",
-    "legal": {
-      "privacyPolicy": "Privacy Policy",
-      "termsOfUse": "Terms of Use"
-    },
     "socialMedia": "Social Media",
-    "navigation": "Navigation",
-    "legalSection": "Legal"
+    "navigation": "Navigation"
   },
   "contactUs": {
     "title": "Get in Touch with Our Experts",
@@ -78,5 +74,15 @@
     "visionTitle": "Our Commitment to You",
     "visionDesc": " values every customer. For us, it's not just about sales — it's about a bond of trust and care.",
     "visionDesc2": "Every product you choose comes with a guarantee of quality and comfort. We always listen to your needs and strive to create perfection in every detail."
+  },
+  "offer": {
+    "offer1": "Luxurious bathtubs",
+    "offer2": "Innovative shower systems",
+    "offer3": "Premium faucets",
+    "offer4": "Wall-hung toilets"
+  },
+  "product": {
+    "productCategories": "Product Categories",
+    "allProducts": "All Products"
   }
 }

@@ -6,21 +6,22 @@
       "about": "Biz Haqimizda",
       "contact": "Aloqa",
       "partnership": "Hamkorlik"
-    },
-    "languages": {
-      "uz": "Oʻzbek",
-      "ru": "Русский",
-      "en": "English"
     }
   },
   "mainPage": {
-    "achievementsTitle": "Mukammallik va ishonch merosi",
-    "achievementsDesc": "Sifat va mijozlar mamnuniyatiga bo‘lgan sadoqatimiz o‘zini o‘zi namoyon etadi.",
-    "whatWeSellTitle": "Bizning maxsus to'plamlarimizni kashf eting",
-    "whatWeSellDesc": "Abadiy klassikalardan tortib zamonaviy dizaynlargacha — biz shakl va qulaylikning mukammal uyg'unligini taqdim etamiz.",
-    "featuredTitle": "Nozik did egalari uchun tanlab olingan to‘plamlar",
-    "featuredDesc": "Eng mashhur va innovatsion yechimlarimizdan ehtiyotkorlik bilan tanlab tuzilgan ko‘rgazma.",
-    "seeAllProducts": "Barcha Mahsulotlarni Ko‘rish"
+    "achievementsTitle": "Komfortli hayot uchun mukammal yechim",
+    "achievementsDesc": "Siz eng yaxshisiga loyiqsiz!",
+    "whatWeSellTitle": "Casabella - sifat, kafolat va komfort",
+    "whatWeSellDesc": "15 yil davomida sinovdan o’tgan brendlar va mahsulotlarnigina sizga taqdim etamiz.",
+    "featuredTitle": "Yangi kolleksiyalar",
+    "featuredDesc": "Top dizaynerlar, mashhur brendlar tomonidan chiqarilgan eng so’nggi kolleksiyalar.",
+    "seeAllProducts": "Barcha Mahsulotlarni Ko‘rish",
+    "slide": {
+      "slide1": "",
+      "slide2": "",
+      "slide3": "",
+      "slideButton": "Batafsil ma'lumot"
+    }
   },
   "achievement": {
     "products": "Mahsulotlar",
@@ -29,15 +30,10 @@
     "branches": "Filiallar"
   },
   "footer": {
-    "slogan": "Zamonaviy uy uchun premium hammom va sanitariya-texnik buyumlar.",
+    "slogan": "Komfortli hayot uchun mukammal yechim.",
     "rights": "Barcha huquqlar himoyalangan.",
-    "legal": {
-      "privacyPolicy": "Maxfiylik siyosati",
-      "termsOfUse": "Foydalanish shartlari"
-    },
     "socialMedia": "Ijtimoiy tarmoqlar",
-    "navigation": "Navigatsiya",
-    "legalSection": "Huquqiy"
+    "navigation": "Navigatsiya"
   },
   "contactUs": {
     "title": "Mutaxassislarimiz bilan bog'laning",
@@ -78,5 +74,15 @@
     "visionTitle": "Sizga bo'lgan sadoqatimiz",
     "visionDesc": " har bir mijozni qadrlaydi. Biz uchun bu faqat savdo emas — bu ishonch va g'amxo'rlik aloqasi.",
     "visionDesc2": "Siz tanlagan har bir mahsulot sifat va qulaylik kafolatiga ega. Biz doimo sizning ehtiyojlaringizni eshitamiz va har bir detaldan mukammallik yaratishga intilamiz."
+  },
+  "offer": {
+    "offer1": "Hashamatli vannalar",
+    "offer2": "Innovatsion dush sistemalari",
+    "offer3": "Premium smesitellar",
+    "offer4": "Osma unitazlar"
+  },
+  "product": {
+    "productCategories": "Mahsulot Kategoriyalari",
+    "allProducts": "Barcha Mahsulotlar"
   }
 }
