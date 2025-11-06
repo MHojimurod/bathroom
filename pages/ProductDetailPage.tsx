@@ -3,11 +3,12 @@ import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import ProductCard from "../components/ProductCard";
 import { CheckIcon } from "../components/IconComponents";
-import { ENDPOINT } from "../constants"
+import { ENDPOINT } from "../constants";
+import { useLanguage } from "../context/LanguageContext";
 
 const ProductDetailPage: React.FC = () => {
   const { productId } = useParams<{ productId: string }>();
-
+  const { t } = useLanguage();
   const [product, setProduct] = useState<any | null>(null);
   const [relatedProducts, setRelatedProducts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
@@ -17,15 +18,22 @@ const ProductDetailPage: React.FC = () => {
     const fetchProductData = async () => {
       try {
         setLoading(true);
+        const lang = localStorage.getItem("lang") || "uz";
+
         // Fetch product detail
-        const { data } = await axios.get(`${ENDPOINT}/api/v1/products/${productId}`);
+        const { data } = await axios.get(`${ENDPOINT}/api/v1/products/${productId}`, {
+          headers: { "Accept-Language": lang },
+        });
         setProduct(data);
         if (data.image_urls?.length) setMainImage(data.image_urls[0]);
 
         // Fetch related products by category
         if (data.category_key) {
           const relatedRes = await axios.get(
-            `${ENDPOINT}/api/v1/products?category_key=${data.category_key}`
+            `${ENDPOINT}/api/v1/products?category_key=${data.category_key}`,
+            {
+              headers: { "Accept-Language": lang },
+            }
           );
           const related = relatedRes.data.filter((p: any) => p.id !== data.id).slice(0, 4);
           setRelatedProducts(related);
@@ -80,8 +88,8 @@ const ProductDetailPage: React.FC = () => {
       <div className="container mx-auto px-6 py-12">
         {/* Breadcrumbs */}
         <nav className="text-sm text-gray-500 mb-8">
-          <Link to="/" className="hover:text-gray-800">Bosh sahifa</Link> &gt;
-          <Link to="/products" className="hover:text-gray-800"> Mahsulotlar</Link> &gt;
+          <Link to="/" className="hover:text-gray-800">{t.header.navLinks.home}</Link> &gt;
+          <Link to="/products" className="hover:text-gray-800"> {t.header.navLinks.products}</Link> &gt;
           <span className="text-gray-800"> {product.name}</span>
         </nav>
 
@@ -90,7 +98,7 @@ const ProductDetailPage: React.FC = () => {
           <div>
             <div className="border rounded-lg overflow-hidden mb-4">
               <img
-                src={ENDPOINT+mainImage}
+                src={ENDPOINT + mainImage}
                 alt={product.name}
                 className="w-full h-auto object-cover aspect-square"
               />
@@ -100,12 +108,11 @@ const ProductDetailPage: React.FC = () => {
                 <button
                   key={index}
                   onClick={() => setMainImage(img)}
-                  className={`border rounded-md overflow-hidden transition-all duration-200 ${
-                    mainImage === img ? "ring-2 ring-gray-800" : "hover:opacity-80"
-                  }`}
+                  className={`border rounded-md overflow-hidden transition-all duration-200 ${mainImage === img ? "ring-2 ring-gray-800" : "hover:opacity-80"
+                    }`}
                 >
                   <img
-                    src={ENDPOINT+img}
+                    src={ENDPOINT + img}
                     alt={`${product.name} thumbnail ${index + 1}`}
                     className="w-full h-auto object-cover aspect-square"
                   />
@@ -125,7 +132,7 @@ const ProductDetailPage: React.FC = () => {
             {productFeatures.length > 0 && (
               <div className="mb-8">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">
-                  Asosiy xususiyatlar
+                  {t.product.mainFeatures}
                 </h3>
                 <ul className="space-y-3 text-gray-600">
                   {productFeatures.map((feature: any, index: number) => (
@@ -143,7 +150,7 @@ const ProductDetailPage: React.FC = () => {
                 href="tel:+998773164444"
                 className="w-full bg-gray-800 text-white font-semibold py-4 px-8 rounded-md hover:bg-gray-900 transition-colors duration-300 text-lg block text-center"
               >
-                Hoziroq bog‘laning
+                {t.product.contactNow}
               </a>
             </div>
           </div>

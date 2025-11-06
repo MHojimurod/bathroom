@@ -112,6 +112,10 @@
   "product": {
     "productCategories": "Product Categories",
     "allProducts": "All Products",
-    "moreDetails": "More details"
+    "moreDetails": "More details",
+    "productNotFound": "No products found",
+    "productNotFoundDesc": "There are no products in this category yet.",
+    "mainFeatures": "Main features",
+    "contactNow": "Contact us now"
   }
 }

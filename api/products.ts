@@ -1,4 +1,5 @@
 import axios from "axios";
+import { ENDPOINT } from "@/constants";
 
 export interface ApiProduct {
   id: number | string;
@@ -14,10 +15,17 @@ export interface ApiProduct {
 }
 
 export const fetchProducts = async (categoryKey?: string): Promise<ApiProduct[]> => {
+  const lang = localStorage.getItem("lang") || "uz";
   const url = categoryKey && categoryKey !== "all"
-    ? `http://localhost:5000/api/v1/products?category_key=${categoryKey}`
-    : `http://localhost:5000/api/v1/products`;
-    
-  const response = await axios.get(url);
+    ? `${ENDPOINT}/api/v1/products?category_key=${categoryKey}`
+    : `${ENDPOINT}/api/v1/products`;
+  
+  
+    const response = await axios.get(url, {
+    headers: {
+      "Accept-Language": lang,
+    },
+  });
+
   return response.data;
 };

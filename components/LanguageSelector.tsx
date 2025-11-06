@@ -29,6 +29,7 @@ const LanguageSelector: React.FC = () => {
     const handleSelect = (langCode: string) => {
         setLang(langCode as 'uz' | 'ru' | 'en');
         setIsOpen(false);
+        window.location.reload(); 
     };
 
     useEffect(() => {

@@ -112,6 +112,10 @@
   "product": {
     "productCategories": "Категории товаров",
     "allProducts": "Все товары",
-    "moreDetails": "Подробнее"
+    "moreDetails": "Подробнее",
+    "productNotFound": "Продукты не найдены",
+    "productNotFoundDesc": "В этой категории пока нет продуктов.",
+    "mainFeatures": "Основные характеристики",
+    "contactNow": "Свяжитесь с нами сейчас"
   }
 }

@@ -74,10 +74,10 @@
     "advantageDesc": "{name}ning asosiy ustunliklaridan biri — \"namuna\" xizmati, ya'ni siz tanlayotgan mahsulotni o'rnatilishidan oldin amalda haqiqiy mahsulotlar hammomxonangizda qanaqa ko'rinishini ko'rish imkoniyati. Bundan tashqari, biz O'zbekistonda hali mavjud bo'lmagan eng sifatli, eksklyuziv va premium brendlar bilan hamkorliklarni yo'lga qo'ymoqdamiz.",
     "quote": "“{name} — bu <b>komfort</b>, <b>sifat</b>, <b>did</b> va <b>ishonch</b>. Biz sizning uyingizdagi har bir tafsilotni mukammallikka yetkazishga yordam beramiz.”"
   },
-  "partner":{
+  "partner": {
     "title": "Casabella — ishonch, sifat va didni qadrlaydigan hamkorlar uchun yaratilgan makon",
     "desc": "Biz bilan hamkorlik qilish sizga nafaqat premium brendlar va eksklyuziv mahsulotlarga kirish imkonini beradi, balki O'zbekiston bozorida yangilik yaratish, sifat madaniyatini birgalikda oshirish imkonini ham beradi.",
-    "offer":"Hamkorlarimiz uchun biz:",
+    "offer": "Hamkorlarimiz uchun biz:",
     "offer1": "Eng so'nggi kolleksiyalar haqida birinchi bo'lib ma'lumot",
     "offer2": "Maxsus narxlar va qulay shartlar",
     "offer3": "Texnik va dizayn bo'yicha maslahatlar",
@@ -100,7 +100,6 @@
       "select2": "Distribyutor",
       "select3": "Interyer dizayneri",
       "select4": "Arxitektor"
-
     }
   },
   "offer": {
@@ -114,6 +113,8 @@
     "allProducts": "Barcha Mahsulotlar",
     "moreDetails": "Batafsil ko'rish",
     "productNotFound": "Hech qanday mahsulot topilmadi",
-    "productNotFoundDesc": "Bu ketegoriyada hali hech qanday mahsulot mavjud emas."
+    "productNotFoundDesc": "Bu ketegoriyada hali hech qanday mahsulot mavjud emas.",
+    "mainFeatures": "Asosiy xususiyatlar",
+    "contactNow": "Hoziroq bog‘laning"
   }
 }

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { ENDPOINT } from "@/constants";
+import { useLanguage } from "../context/LanguageContext";
 
 interface Category {
   name: string;
@@ -15,11 +17,23 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ selectedCategory, onCategoryChange }) => {
   const [categories, setCategories] = useState<Category[]>([]);
   const [openCategories, setOpenCategories] = useState<Set<string>>(new Set());
+  const { t } = useLanguage();
+  
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/v1/categories").then((res) => {
-      setCategories(res.data);
-    });
+    const lang = localStorage.getItem("lang") || "uz";
+
+    axios.get(`${ENDPOINT}/api/v1/categories`, {
+        headers: {
+          "Accept-Language": lang, // send language header
+        },
+      })
+      .then((res) => {
+        setCategories(res.data);
+      })
+      .catch((err) => {
+        console.error("Error fetching categories:", err);
+      });
   }, []);
 
   const toggleCategory = (key: string) => {
@@ -37,18 +51,16 @@ const Sidebar: React.FC<SidebarProps> = ({ selectedCategory, onCategoryChange })
             onCategoryChange(cat.unique_key);
             if (cat.subcategories?.length) toggleCategory(cat.unique_key);
           }}
-          className={`w-full text-left px-${4 + level * 2} py-2 rounded-md transition-colors duration-200 flex justify-between items-center ${
-            selectedCategory === cat.unique_key
+          className={`w-full text-left px-${4 + level * 2} py-2 rounded-md transition-colors duration-200 flex justify-between items-center ${selectedCategory === cat.unique_key
               ? "bg-gray-800 text-white font-semibold"
               : "text-gray-600 hover:bg-gray-100"
-          }`}
+            }`}
         >
           {cat.name}
           {cat.subcategories?.length ? (
             <svg
-              className={`w-4 h-4 transition-transform duration-300 ${
-                openCategories.has(cat.unique_key) ? "rotate-180" : ""
-              }`}
+              className={`w-4 h-4 transition-transform duration-300 ${openCategories.has(cat.unique_key) ? "rotate-180" : ""
+                }`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -69,18 +81,17 @@ const Sidebar: React.FC<SidebarProps> = ({ selectedCategory, onCategoryChange })
 
   return (
     <aside className="lg:w-1/4">
-      <h2 className="text-2xl font-bold text-gray-800 mb-6">Категории продуктов</h2>
+      <h2 className="text-xl font-bold text-gray-800 mb-6">{t.product.productCategories}</h2>
       <ul className="space-y-1">
         <li>
           <button
             onClick={() => onCategoryChange("all")}
-            className={`w-full text-left px-4 py-2 rounded-md transition-colors duration-200 ${
-              selectedCategory === "all"
+            className={`w-full text-left px-4 py-2 rounded-md transition-colors duration-200 ${selectedCategory === "all"
                 ? "bg-gray-800 text-white font-semibold"
                 : "text-gray-600 hover:bg-gray-100"
-            }`}
+              }`}
           >
-            Все продукты
+            {t.product.allProducts}
           </button>
         </li>
         {renderCategories(categories)}
