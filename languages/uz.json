@@ -92,10 +92,15 @@
       "email": "Email",
       "phone": "Telefon",
       "companyWebsite": "Kompaniya vebsayti",
-      "partnerType": "Hamkorlik turi",
+      "partnerType": "Hamkorlik turi...",
       "message": "Kompaniyangiz va maqsadlaringiz haqida bizga xabar bering",
       "submit": "Murojaatni yuborish",
-      "formSuccess": "✅ Ariza muvaffaqiyatli topshirildi! Tez orada siz bilan bog'lanamiz."
+      "formSuccess": "✅ Ariza muvaffaqiyatli topshirildi! Tez orada siz bilan bog'lanamiz.",
+      "select1": "Chakana sotuvchi",
+      "select2": "Distribyutor",
+      "select3": "Interyer dizayneri",
+      "select4": "Arxitektor"
+
     }
   },
   "offer": {
@@ -107,6 +112,8 @@
   "product": {
     "productCategories": "Mahsulot Kategoriyalari",
     "allProducts": "Barcha Mahsulotlar",
-    "moreDetails": "Batafsil ko'rish"
+    "moreDetails": "Batafsil ko'rish",
+    "productNotFound": "Hech qanday mahsulot topilmadi",
+    "productNotFoundDesc": "Bu ketegoriyada hali hech qanday mahsulot mavjud emas."
   }
 }

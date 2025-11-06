@@ -4,21 +4,21 @@ import Sidebar from "../components/Sidebar";
 import ProductCard from "../components/ProductCard";
 import { useLanguage } from "../context/LanguageContext";
 import { fetchProducts, ApiProduct } from "../api/products";
-import { PRODUCTS_HERO_SLIDES } from "../constants";
+import { PRODUCTS_HERO_SLIDES, PRODUCT_CATEGORIES } from "../constants";
 
-const ProductsPage: React.FC = () => {
+const ProductsPageAPI: React.FC = () => {
   const { t } = useLanguage();
-
   const [products, setProducts] = useState<ApiProduct[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [openCategory, setOpenCategory] = useState<string>("");
 
   // Fetch products from API
   const loadProducts = async (categoryKey?: string) => {
     try {
-      const data = await fetchProducts(categoryKey === "all" ? undefined : categoryKey);
+      const data = await fetchProducts(categoryKey);
       setProducts(data);
-    } catch (err) {
-      console.error("❌ Failed to load products:", err);
+    } catch (error) {
+      console.error("❌ Failed to fetch products:", error);
       setProducts([]);
     }
   };
@@ -27,7 +27,16 @@ const ProductsPage: React.FC = () => {
     loadProducts(selectedCategory);
   }, [selectedCategory]);
 
-  // Map API data for display
+  const handleCategoryClick = (category: any) => {
+    setSelectedCategory(category.unique_key || "all");
+    if (category.subcategories?.length > 0) {
+      setOpenCategory(openCategory === category.unique_key ? "" : category.unique_key);
+    } else {
+      setOpenCategory("");
+    }
+  };
+
+  // Map API data → component-friendly data
   const mappedProducts = useMemo(
     () =>
       products.map((p) => ({
@@ -46,10 +55,12 @@ const ProductsPage: React.FC = () => {
 
       <div className="container mx-auto px-6 py-16" id="categories">
         <div className="flex flex-col lg:flex-row gap-12">
-          {/* Pass state & setter down to Sidebar */}
+          {/* Sidebar */}
           <Sidebar
+            categories={PRODUCT_CATEGORIES}
             selectedCategory={selectedCategory}
-            onCategoryChange={setSelectedCategory}
+            openCategory={openCategory}
+            onCategoryClick={handleCategoryClick}
           />
 
           {/* Products */}
@@ -77,4 +88,4 @@ const ProductsPage: React.FC = () => {
   );
 };
 
-export default ProductsPage;
+export default ProductsPageAPI;

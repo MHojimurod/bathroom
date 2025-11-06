@@ -93,10 +93,14 @@
       "email": "Email",
       "phone": "Phone",
       "companyWebsite": "Company website",
-      "partnerType": "Type of partnership",
+      "partnerType": "Type of partnership...",
       "message": "Tell us about your company and goals",
       "submit": "Submit application",
-      "formSuccess": "✅ Application submitted successfully! We’ll contact you soon."
+      "formSuccess": "✅ Application submitted successfully! We’ll contact you soon.",
+      "select1": "Retailer",
+      "select2": "Distributor",
+      "select3": "Interior Designer",
+      "select4": "Architect"
     }
   },
   "offer": {

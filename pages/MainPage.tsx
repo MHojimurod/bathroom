@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HeroSlider from "../components/HeroSlider";
-import ProductCard from "../components/ProductCard";
-import { FEATURED_PRODUCTS } from "../constants";
+import  FeaturedProducts  from "../components/FeaturedProducts";
 import { useLanguage } from "../context/LanguageContext";
 import Achievement from "../components/AchievementLink";
 import type { HeroSlide } from "../types";
@@ -97,11 +96,7 @@ const MainPage: React.FC = () => {
               {t.mainPage.featuredDesc}
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {FEATURED_PRODUCTS.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+          <FeaturedProducts />
           <div className="text-center">
             <Link
               to="/products"

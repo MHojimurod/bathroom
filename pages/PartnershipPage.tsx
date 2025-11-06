@@ -179,7 +179,7 @@ const PartnershipPage: React.FC = () => {
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="Telefon"
+                  placeholder={t.partner.form.phone}
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-800"
@@ -188,7 +188,7 @@ const PartnershipPage: React.FC = () => {
               <input
                 type="url"
                 name="website"
-                placeholder="Kompaniya websayti (Ixtiyoriy)"
+                placeholder={t.partner.form.companyWebsite}
                 value={formData.website}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-800"
@@ -201,16 +201,16 @@ const PartnershipPage: React.FC = () => {
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-800 bg-white"
               >
                 <option value="" disabled>
-                  Hamkorlik turi...
+                  {t.partner.form.partnerType}
                 </option>
-                <option value="Chakana sotuvchi">Chakana sotuvchi</option>
-                <option value="Distribyutor">Distribyutor</option>
-                <option value="Interyer dizayneri">Interyer dizayneri</option>
-                <option value="Arxitektor">Arxitektor</option>
+                <option value="Chakana sotuvchi">{t.partner.form.select1}</option>
+                <option value="Distribyutor">{t.partner.form.select2}</option>
+                <option value="Interyer dizayneri">{t.partner.form.select3}</option>
+                <option value="Arxitektor">{t.partner.form.select4}</option>
               </select>
               <textarea
                 name="message"
-                placeholder="Kompaniyangiz va maqsadlaringiz haqida bizga xabar bering"
+                placeholder={t.partner.form.message}
                 rows={5}
                 value={formData.message}
                 onChange={handleChange}
@@ -222,7 +222,7 @@ const PartnershipPage: React.FC = () => {
                   type="submit"
                   className="w-full bg-gray-800 text-white font-semibold py-3 rounded-md hover:bg-gray-900 transition-colors"
                 >
-                  Murojaatni yuborish
+                  {t.partner.form.submit}
                 </button>
                 {formStatus && (
                   <p className="mt-4 text-center text-gray-600">{formStatus}</p>
