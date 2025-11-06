@@ -15,7 +15,7 @@
     "whatWeSellDesc": "15 yil davomida sinovdan o’tgan brendlar va mahsulotlarnigina sizga taqdim etamiz.",
     "featuredTitle": "Yangi kolleksiyalar",
     "featuredDesc": "Top dizaynerlar, mashhur brendlar tomonidan chiqarilgan eng so’nggi kolleksiyalar.",
-    "seeAllProducts": "Barcha Mahsulotlarni Ko‘rish",
+    "seeAllProducts": "Barcha Mahsulotlarni Ko'rish",
     "slide": {
       "slide1": "",
       "slide2": "",
@@ -36,8 +36,8 @@
     "navigation": "Navigatsiya"
   },
   "contactUs": {
-    "title": "Mutaxassislarimiz bilan bog'laning",
-    "description": "Mahsulotlarimiz haqida savolingiz bo'ladimi, dizayn bo'yicha maslahatga muhtojmisiz yoki yordamga muhtojmisiz, bizning jamoamiz sizga yordam berishga tayyor.",
+    "title": "Biz bilan bog'laning",
+    "description": "Savolingiz bormi? Casabella jamoasi sizga mahsulot tanlashdan tortib dizayn va o'rnatish standartlarigacha bo'lgan barcha bosqichda yo'l-yo'riq ko'rsatadi. Biz uchun har bir mijozning qulayligi muhim.",
     "form": {
       "name": "Ism",
       "email": "Elektron pochta (majburiy emas)",
@@ -46,7 +46,7 @@
       "submit": "Xabar yuborish",
       "success": "✅ Xabar muvaffaqiyatli yuborildi!",
       "sending": "Xabaringiz yuborilmoqda...",
-      "contact": "Bog'laning"
+      "contact": "Savolingiz bormi?"
     },
     "contactInfo": {
       "phone": "Telefon",
@@ -55,25 +55,48 @@
       "addressValue": "Toshkent, O'zbekiston"
     },
     "workingHours": "Ish vaqti",
-    "days": "Dushanba - Juma: 9:00 - 18:00",
-    "Saturday": "Shanba: 10:00 - 16:00",
-    "Sunday": "Yakshanba: Yopiq",
+    "days": "Dushanba - Yakshanba: 9:00 - 19:00",
     "ourBranches": "Bizning Filiallarimiz",
     "branches": {
-      "branch1": "Usta Shirin ko‘chasi, 122-uy, Toshkent",
-      "branch2": "Katta Darxon ko‘chasi, 15-uy, 53–54-do‘kon, Toshkent",
-      "branch3": "Usta Shirin ko‘chasi, 125-uy, 1–39-do‘kon, Toshkent",
-      "branch4": "Bek Tupi bozori, 53-do‘kon va 1–32-do‘konlar, Toshkent"
+      "branch1": "Usta Shirin ko'chasi, 122-uy, Toshkent",
+      "branch2": "Katta Darxon ko'chasi, 15-uy, 53-54-do'kon, Toshkent",
+      "branch3": "Usta Shirin ko'chasi, 125-uy, 1-39-do'kon, Toshkent",
+      "branch4": "Bek Tupi bozori, 53-do'kon va 1-32-do'konlar, Toshkent"
     }
   },
   "aboutUs": {
-    "title": "Hashamat San'ati, Qulaylik Falsafasi",
-    "missionTitle": "Bizning hikoyamiz va Falsafamiz",
-    "missionDesc": " - go'zallik va qulaylik uyg'unligi. Biz har bir uyni zamonaviy, shinam va o'ziga xos maskanga aylantirishni maqsad qilganmiz.",
-    "missionDesc2": "Sifat, nafislik va soddalik - bizning asosiy qadriyatlarimiz. Har bir mahsulot sizning uyingizdagi iliqlik va uslub ramzi.",
-    "visionTitle": "Sizga bo'lgan sadoqatimiz",
-    "visionDesc": " har bir mijozni qadrlaydi. Biz uchun bu faqat savdo emas — bu ishonch va g'amxo'rlik aloqasi.",
-    "visionDesc2": "Siz tanlagan har bir mahsulot sifat va qulaylik kafolatiga ega. Biz doimo sizning ehtiyojlaringizni eshitamiz va har bir detaldan mukammallik yaratishga intilamiz."
+    "title": "Yillar davomida qozonilgan ishonch",
+    "missionTitle": "Tarixga nazar",
+    "missionDesc": " — bu shunchaki santexnila mahsulotlari do'koni emas. Bu 15 yillik mehnat, sadoqat va orzularning natijasi.",
+    "missionDesc2": "Bizning yo'l kichkina, atigi 10 kvadrat metrlik do'kondan boshlandi. Asoschimiz oddiy sotuvchi sifatida ish boshlagan, lekin ishini yurakdan sevardi, har bir mijozga chin dildan xizmat ko'rsatardi. Ana shu muhabbat, harakat va ishonch bugun Casabellani butun O'zbekiston bo'ylab tanilgan brendga aylantirdi.",
+    "visionTitle": "Bugun biz faxr bilan ayta olamiz",
+    "visionDesc": "  5 ta zamonaviy filialga ega va do'konlarimizning umumiy maydoni ming kvadrat metrga yetib qoldi. Ammo bu — faqat boshlanish. Biz to'xtamaymiz, har kuni yanada yaxshilanish, yangilik kiritish va mijozlarimizga eng yuqori darajadagi qulaylik yaratish uchun ishlaymiz.",
+    "advantageDesc": "{name}ning asosiy ustunliklaridan biri — \"namuna\" xizmati, ya'ni siz tanlayotgan mahsulotni o'rnatilishidan oldin amalda haqiqiy mahsulotlar hammomxonangizda qanaqa ko'rinishini ko'rish imkoniyati. Bundan tashqari, biz O'zbekistonda hali mavjud bo'lmagan eng sifatli, eksklyuziv va premium brendlar bilan hamkorliklarni yo'lga qo'ymoqdamiz.",
+    "quote": "“{name} — bu <b>komfort</b>, <b>sifat</b>, <b>did</b> va <b>ishonch</b>. Biz sizning uyingizdagi har bir tafsilotni mukammallikka yetkazishga yordam beramiz.”"
+  },
+  "partner":{
+    "title": "Casabella — ishonch, sifat va didni qadrlaydigan hamkorlar uchun yaratilgan makon",
+    "desc": "Biz bilan hamkorlik qilish sizga nafaqat premium brendlar va eksklyuziv mahsulotlarga kirish imkonini beradi, balki O'zbekiston bozorida yangilik yaratish, sifat madaniyatini birgalikda oshirish imkonini ham beradi.",
+    "offer":"Hamkorlarimiz uchun biz:",
+    "offer1": "Eng so'nggi kolleksiyalar haqida birinchi bo'lib ma'lumot",
+    "offer2": "Maxsus narxlar va qulay shartlar",
+    "offer3": "Texnik va dizayn bo'yicha maslahatlar",
+    "offer4": "Hamda ishonchli, uzoq muddatli aloqani kafolatlaymiz",
+    "quote": "Casabella bilan hamkorlik — bu oddiy biznes emas, bu birgalikda mukammallikka intilish.",
+    "slogan": "Biz bilan hamkorlik qilish sizga nafaqat premium brendlar va eksklyuziv mahsulotlarga kirish imkonini beradi, balki O'zbekiston bozorida yangilik yaratish, sifat madaniyatini birgalikda oshirish imkonini ham beradi.",
+    "form": {
+      "title": "Hamkorlik safaringizni boshlang",
+      "desc": "Birgalikda qanday o'sishimiz mumkinligini muhokama qilish uchun quyidagi shaklni to'ldiring yoki hamkorlik guruhimiz bilan bevosita bog'laning.",
+      "companyName": "Kompaniya nomi",
+      "person": "Bog'lanish uchun shaxs",
+      "email": "Email",
+      "phone": "Telefon",
+      "companyWebsite": "Kompaniya vebsayti",
+      "partnerType": "Hamkorlik turi",
+      "message": "Kompaniyangiz va maqsadlaringiz haqida bizga xabar bering",
+      "submit": "Murojaatni yuborish",
+      "formSuccess": "✅ Ariza muvaffaqiyatli topshirildi! Tez orada siz bilan bog'lanamiz."
+    }
   },
   "offer": {
     "offer1": "Hashamatli vannalar",
@@ -83,6 +106,7 @@
   },
   "product": {
     "productCategories": "Mahsulot Kategoriyalari",
-    "allProducts": "Barcha Mahsulotlar"
+    "allProducts": "Barcha Mahsulotlar",
+    "moreDetails": "Batafsil ko'rish"
   }
 }

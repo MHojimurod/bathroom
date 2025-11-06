@@ -36,8 +36,8 @@
     "navigation": "Navigation"
   },
   "contactUs": {
-    "title": "Get in Touch with Our Experts",
-    "description": "Have questions about our products, need design advice, or require assistance? Our team is ready to help you.",
+    "title": "Contact us",
+    "description": "Do you have any questions? The Casabella team will guide you through every step — from product selection to design and installation standards. For us, every customer's comfort matters.",
     "form": {
       "name": "Name",
       "email": "Email (optional)",
@@ -46,7 +46,7 @@
       "submit": "Send Message",
       "success": "✅ Message sent successfully!",
       "sending": "Your message is being sent...",
-      "contact": "Contact"
+      "contact": "Do you have a question?"
     },
     "contactInfo": {
       "phone": "Phone",
@@ -55,9 +55,7 @@
       "addressValue": "Tashkent, Uzbekistan"
     },
     "workingHours": "Working Hours",
-    "days": "Monday - Friday: 9:00 AM - 6:00 PM",
-    "Saturday": "Saturday: 10:00 AM - 4:00 PM",
-    "Sunday": "Sunday: Closed",
+    "days": "Monday - Sunday: 9:00 AM - 7:00 PM",
     "ourBranches": "Our Branches",
     "branches": {
       "branch1": "Usta Shirin Street, House 122, Tashkent",
@@ -67,13 +65,39 @@
     }
   },
   "aboutUs": {
-    "title": "The Art of Luxury, The Philosophy of Comfort",
-    "missionTitle": "Our Story and Philosophy",
-    "missionDesc": " - the harmony of beauty and comfort. We aim to transform every home into a modern, cozy, and unique space.",
-    "missionDesc2": "Quality, elegance, and simplicity - our core values. Every product symbolizes warmth and style in your home.",
-    "visionTitle": "Our Commitment to You",
-    "visionDesc": " values every customer. For us, it's not just about sales — it's about a bond of trust and care.",
-    "visionDesc2": "Every product you choose comes with a guarantee of quality and comfort. We always listen to your needs and strive to create perfection in every detail."
+    "title": "Trust earned over the years",
+    "missionTitle": "A look into history",
+    "missionDesc": " - is not just a plumbing products store. It is the result of 15 years of hard work, dedication, and dreams.",
+    "missionDesc2": "Our journey began in a small 10-square-meter shop. Our founder started as an ordinary salesperson but truly loved his work and served every customer with genuine care. It was this love, effort, and trust that transformed Casabella into a brand recognized across all of Uzbekistan.",
+    "visionTitle": "Today, we can proudly say",
+    "visionDesc": " now has 5 modern branches, and the total area of our stores has reached one thousand square meters. But this is only the beginning. We won't stop — every day, we strive to improve, innovate, and create the highest level of comfort for our customers.",
+    "visionDesc2": "Every product you choose comes with a guarantee of quality and comfort. We always listen to your needs and strive to create perfection in every detail.",
+    "advantageDesc": "One of {name}'s main advantages is the “sample” service, which allows you to see how the actual products you choose will look in your bathroom before installation. In addition, we are establishing partnerships with the highest-quality, exclusive, and premium brands that are not yet available in Uzbekistan",
+    "quote": "“{name} means <b>comfort</b>, <b>quality</b>, <b>taste</b> and <b>trust</b>. We help you perfect every detail of your home.”"
+  },
+  "partner": {
+    "title": "Casabella — a place created for partners who value trust, quality, and taste.",
+    "desc": "Partnering with us gives you not only access to premium brands and exclusive products but also the opportunity to innovate in the Uzbek market and jointly elevate the culture of quality.",
+    "offer": "For our partners, we provide:",
+    "offer1": "First-hand information about the latest collections",
+    "offer2": "Special prices and favorable terms",
+    "offer3": "Technical and design consultations",
+    "offer4": "And we guarantee a reliable, long-term partnership",
+    "quote": "Partnership with Casabella is not just business — it is a shared pursuit of perfection.",
+    "slogan": "Partnering with us gives you not only access to premium brands and exclusive products, but also the opportunity to innovate in the Uzbek market and jointly elevate the culture of quality.",
+    "form": {
+      "title": "Start your partnership journey",
+      "desc": "Fill out the form below or contact our partnership team directly to discuss how we can grow together.",
+      "companyName": "Company name",
+      "person": "Contact person",
+      "email": "Email",
+      "phone": "Phone",
+      "companyWebsite": "Company website",
+      "partnerType": "Type of partnership",
+      "message": "Tell us about your company and goals",
+      "submit": "Submit application",
+      "formSuccess": "✅ Application submitted successfully! We’ll contact you soon."
+    }
   },
   "offer": {
     "offer1": "Luxurious bathtubs",
@@ -83,6 +107,7 @@
   },
   "product": {
     "productCategories": "Product Categories",
-    "allProducts": "All Products"
+    "allProducts": "All Products",
+    "moreDetails": "More details"
   }
 }

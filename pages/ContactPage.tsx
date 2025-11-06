@@ -4,12 +4,10 @@ import { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } from "../constants";
 import { useLanguage } from '../context/LanguageContext';
 
 const ContactPage: React.FC = () => {
-    const {t} = useLanguage();
+    const { t } = useLanguage();
     const [formData, setFormData] = useState({
         name: '',
-        email: '',
         phone: '',
-        subject: '',
         message: '',
     });
     const [formStatus, setFormStatus] = useState('');
@@ -22,36 +20,35 @@ const ContactPage: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setFormStatus(`${t.contactUs.form.sending}`);
-      
+
         const message = `
       📩 Yangi xabar veb-saytdan:
       
       👤 Ism: ${formData.name}
       📞 Telefon: ${formData.phone}
-      📧 Email: ${formData.email}
       💬 Xabar: ${formData.message}
         `;
-      
+
         try {
-          // Telegram API orqali yuborish
-          await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              chat_id: TELEGRAM_CHAT_ID,
-              text: message,
-              parse_mode: 'HTML',
-            }),
-          });
-      
-          // Muvaffaqiyatli yuborilgandan keyin
-          setFormStatus(`${t.contactUs.form.success}`);
-          setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+            // Telegram API orqali yuborish
+            await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: TELEGRAM_CHAT_ID,
+                    text: message,
+                    parse_mode: 'HTML',
+                }),
+            });
+
+            // Muvaffaqiyatli yuborilgandan keyin
+            setFormStatus(`${t.contactUs.form.success}`);
+            setFormData({ name: '', phone: '', message: '' });
         } catch (error) {
-          console.error('Telegramga yuborishda xatolik:', error);
-          setFormStatus('❌ Xabar yuborilmadi. Iltimos, keyinroq urinib ko‘ring.');
+            console.error('Telegramga yuborishda xatolik:', error);
+            setFormStatus('❌ Xabar yuborilmadi. Iltimos, keyinroq urinib ko‘ring.');
         }
-      };
+    };
 
     return (
         <div className="bg-gray-50">
@@ -69,15 +66,14 @@ const ContactPage: React.FC = () => {
                     {/* Contact Info and Form */}
                     <div className="bg-white p-8 rounded-lg shadow-lg">
                         <h2 className="text-2xl font-bold text-gray-800 mb-6">
-                            {t.contactUs.contact}
+                            {t.contactUs.form.contact}
                         </h2>
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <input type="text" name="name" placeholder={t.contactUs.form.name} value={formData.name} onChange={handleChange} required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-800 focus:outline-none" />
                                 <input type="tel" name="phone" placeholder={t.contactUs.form.phone} value={formData.phone} onChange={handleChange} required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-800 focus:outline-none" />
-                                
+
                             </div>
-                                <input type="email" name="email" placeholder={t.contactUs.form.email} value={formData.email} onChange={handleChange}  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-800 focus:outline-none" />
                             <textarea name="message" placeholder={t.contactUs.form.message} rows={5} value={formData.message} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-800 focus:outline-none"></textarea>
                             <div>
                                 <button type="submit" className="w-full bg-gray-800 text-white font-semibold py-3 px-6 rounded-md hover:bg-gray-900 transition-colors duration-300">
@@ -91,14 +87,18 @@ const ContactPage: React.FC = () => {
                     {/* Contact Details and Map */}
                     <div className="space-y-8">
                         <div className="bg-white p-8 rounded-lg shadow-lg space-y-4">
-                            <p><strong>{t.contactUs.contactInfo.phone}: </strong> <a href="tel:+998773164444" className="text-gray-600 hover:text-gray-900"> +998 77 316 44 44</a></p>
-                            <p><strong>{t.contactUs.contactInfo.email}: </strong> <a href="mailto:casabella@gmail.com" className="text-gray-600 hover:text-gray-900"> casabella@gmail.com</a></p>
-                            <p><strong>{t.contactUs.contactInfo.address}: </strong> {t.contactUs.contactInfo.addressValue}</p>
+                            <p className="flex"><strong>{t.contactUs.contactInfo.phone}: </strong>
+                                <p className="flex ml-2" style={{flexDirection: "column"}} >
+                                    <a href="tel:+998773164444" className="text-gray-600 hover:text-gray-900">+998 (77)-316-4444</a>
+                                    <a href="tel:+998700184444" className="text-gray-600 hover:text-gray-900">+998 (70)-018-4444</a>
+                                    <a href="tel:+998770864444" className="text-gray-600 hover:text-gray-900"> +998 (77)-086-4444</a>
+                                    <a href="tel:+998700194444" className="text-gray-600 hover:text-gray-900"> +998 (70)-019- 4444</a>
+                                </p>
+                            </p>
+                            <p><strong>{t.contactUs.contactInfo.address}: </strong> {t.contactUs.branches.branch1}</p>
                             <hr />
                             <h3 className="font-semibold pt-2">{t.contactUs.workingHours}</h3>
                             <p className="text-gray-600">{t.contactUs.days}</p>
-                            <p className="text-gray-600">{t.contactUs.Saturday}</p>
-                            <p className="text-gray-600">{t.contactUs.Sunday}</p>
                         </div>
                         <div className="bg-white p-2 rounded-lg shadow-lg">
                             <h2 className="text-xl font-bold text-gray-800 p-6">{t.contactUs.ourBranches}</h2>
@@ -138,7 +138,7 @@ const ContactPage: React.FC = () => {
                                             rel="noopener noreferrer"
                                             className="text-blue-600 hover:underline"
                                         >
-                                             {t.contactUs.branches.branch3}
+                                            {t.contactUs.branches.branch3}
                                         </a>
                                     </p>
                                 </div>

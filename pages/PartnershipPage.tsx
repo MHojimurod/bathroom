@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } from "../constants";
+import { useLanguage } from '../context/LanguageContext';
+
 const PartnershipPage: React.FC = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     companyName: "",
     contactPerson: "",
@@ -51,7 +54,7 @@ const PartnershipPage: React.FC = () => {
       );
 
       setFormStatus(
-        "✅ Ariza muvaffaqiyatli topshirildi! Tez orada siz bilan bog'lanamiz."
+        `${t.partner.form.formSuccess}`
       );
       setFormData({
         companyName: "",
@@ -78,35 +81,42 @@ const PartnershipPage: React.FC = () => {
         />
         <div className="absolute inset-0 flex items-center justify-center text-center">
           <div>
-            <h1 className="text-5xl font-bold text-white tracking-tight">
-              Muvaffaqiyatni Birgalikda Quramiz
-            </h1>
-            <p className="mt-4 text-xl text-gray-200 max-w-3xl">
-              Biz doimo sifat va hashamatga oid qarashlarimizni baham
-              ko'radiganlar bilan mazmunli hamkorlikni o'rnatishga intilamiz.
-            </p>
+            <h2 className="text-3xl font-bold text-white tracking-tight">
+              {t.partner.title}
+            </h2>
           </div>
         </div>
       </div>
 
       <div className="container mx-auto px-6 py-20">
+
+        <section className="flex justify-center mb-20">
+          <div className="relative bg-gray-50 border-l-4 border-purple-500 rounded-xl shadow-md p-6 max-w-3xl">
+            <p>
+              {t.partner.quote}
+            </p>
+          </div>
+        </section>
+
+
         {/* Why Partner with Us */}
         <section className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-6">
-              Hamkorlikning afzalliklari
+              {t.partner.offer}
             </h2>
             <ul className="space-y-4 text-gray-600 list-disc list-inside">
               <li>
-                Yuqori sifatli, talab yuqori bo'lgan mahsulot liniyasiga kirish.
+                {t.partner.offer1}
               </li>
-              <li>Raqobatbardosh narxlar va jozibador marja imkoniyatlari.</li>
               <li>
-                Maxsus hamkorlarni qo'llab-quvvatlash va marketing resurslari.
+                {t.partner.offer2}
               </li>
-              <li>Maxsus loyihalar va maxsus yechimlar bo'yicha hamkorlik.</li>
               <li>
-                Bizning o'sib borayotgan global tarmog'imizda ishtirok etish.
+                {t.partner.offer3}
+              </li>
+              <li>
+                {t.partner.offer4}
               </li>
             </ul>
           </div>
@@ -119,29 +129,19 @@ const PartnershipPage: React.FC = () => {
 
         {/* Who We Work With */}
         <section className="bg-gray-50 -mx-6 px-6 py-16 text-center mb-20">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            Biz kim bilan ishlaymiz
-          </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Biz mukammallikka sodiqlikni namoyish etadigan, bozorda kuchli
-            mavqega ega bo'lgan va premium segmentni aniq tushunadigan
-            hamkorlarni qadrlaymiz. Siz taniqli chakana sotuvchi, innovatsion
-            dizayn firmasi yoki yuqori darajadagi loyihalarni amalga oshirishni
-            boshlayotgan ishlab chiquvchi bo'lishingizdan qat'i nazar, sizni biz
-            bilan bog'lanishga taklif qilamiz.
+            {t.partner.slogan}
+
           </p>
         </section>
 
-        {/* Partnership Form */}
         <section>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-800 text-center mb-4">
-              Hamkorlik safaringizni boshlang
+              {t.partner.form.title}
             </h2>
             <p className="text-gray-600 text-center mb-8">
-              Birgalikda qanday o'sishimiz mumkinligini muhokama qilish uchun
-              quyidagi shaklni to'ldiring yoki hamkorlik guruhimiz bilan
-              bevosita bog'laning..
+              {t.partner.form.desc}
             </p>
 
             <form
@@ -152,7 +152,7 @@ const PartnershipPage: React.FC = () => {
                 <input
                   type="text"
                   name="companyName"
-                  placeholder="Kompaniya nomi"
+                  placeholder={t.partner.form.companyName}
                   value={formData.companyName}
                   onChange={handleChange}
                   required
@@ -161,7 +161,7 @@ const PartnershipPage: React.FC = () => {
                 <input
                   type="text"
                   name="contactPerson"
-                  placeholder="Bog'lanish uchun shaxs"
+                  placeholder={t.partner.form.person}
                   value={formData.contactPerson}
                   onChange={handleChange}
                   required
@@ -170,7 +170,7 @@ const PartnershipPage: React.FC = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email"
+                  placeholder={t.partner.form.email}
                   value={formData.email}
                   onChange={handleChange}
                   required

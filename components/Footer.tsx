@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-8 md:mb-0">
             <Link to="/" className="text-3xl font-bold tracking-tight text-white">
-              <img src="/images/logo-white.webp" width="200" alt="" />
+              <img src="/images/logo-white.png" width="200" alt="" />
             </Link>
             <p className="mt-2 text-gray-400 max-w-xs">
               {t.footer.slogan}
