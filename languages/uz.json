@@ -24,9 +24,9 @@
     }
   },
   "achievement": {
-    "products": "Mahsulotlar",
-    "clients": "Mijozlar",
-    "partners": "Hamkorlar",
+    "products": "Mahsulot assortimenti",
+    "clients": "Mamnun mijozlar",
+    "partners": "Brend hamkorlar",
     "branches": "Filiallar"
   },
   "footer": {
@@ -103,9 +103,9 @@
     }
   },
   "offer": {
-    "offer1": "Hashamatli vannalar",
+    "offer1": "Eksklyuziv vannalar",
     "offer2": "Innovatsion dush sistemalari",
-    "offer3": "Premium smesitellar",
+    "offer3": "Premium dizayndagi smesitellar",
     "offer4": "Osma unitazlar"
   },
   "product": {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } from "../constants";
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from "../context/LanguageContext";
 
 const PartnershipPage: React.FC = () => {
   const { t } = useLanguage();
@@ -53,9 +53,7 @@ const PartnershipPage: React.FC = () => {
         }
       );
 
-      setFormStatus(
-        `${t.partner.form.formSuccess}`
-      );
+      setFormStatus(`${t.partner.form.formSuccess}`);
       setFormData({
         companyName: "",
         contactPerson: "",
@@ -89,36 +87,23 @@ const PartnershipPage: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-6 py-20">
-
-        <section className="flex justify-center mb-20">
-          <div className="relative bg-gray-50 border-l-4 border-purple-500 rounded-xl shadow-md p-6 max-w-3xl">
-            <p>
-              {t.partner.quote}
-            </p>
-          </div>
+        <section className="bg-gray-50 -mx-6 px-6 py-16 text-center mb-20">
+        <p>{t.partner.quote}</p>
         </section>
 
-
         {/* Why Partner with Us */}
-        <section className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <section className="grid md:grid-cols-2 gap-16 items-center mb-20">
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">
+            <p className="text-justify"> {t.partner.slogan}</p>
+            {/* <h2 className="text-3xl font-bold text-gray-800 mb-6">
               {t.partner.offer}
             </h2>
             <ul className="space-y-4 text-gray-600 list-disc list-inside">
-              <li>
-                {t.partner.offer1}
-              </li>
-              <li>
-                {t.partner.offer2}
-              </li>
-              <li>
-                {t.partner.offer3}
-              </li>
-              <li>
-                {t.partner.offer4}
-              </li>
-            </ul>
+              <li>{t.partner.offer1}</li>
+              <li>{t.partner.offer2}</li>
+              <li>{t.partner.offer3}</li>
+              <li>{t.partner.offer4}</li>
+            </ul> */}
           </div>
           <img
             src="/images/partner.png"
@@ -131,7 +116,6 @@ const PartnershipPage: React.FC = () => {
         <section className="bg-gray-50 -mx-6 px-6 py-16 text-center mb-20">
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             {t.partner.slogan}
-
           </p>
         </section>
 
@@ -203,9 +187,13 @@ const PartnershipPage: React.FC = () => {
                 <option value="" disabled>
                   {t.partner.form.partnerType}
                 </option>
-                <option value="Chakana sotuvchi">{t.partner.form.select1}</option>
+                <option value="Chakana sotuvchi">
+                  {t.partner.form.select1}
+                </option>
                 <option value="Distribyutor">{t.partner.form.select2}</option>
-                <option value="Interyer dizayneri">{t.partner.form.select3}</option>
+                <option value="Interyer dizayneri">
+                  {t.partner.form.select3}
+                </option>
                 <option value="Arxitektor">{t.partner.form.select4}</option>
               </select>
               <textarea

@@ -32,10 +32,10 @@ const Achievement: React.FC = () => {
     const { t } = useLanguage();
 
     const ACHIEVEMENTS: Achievement[] = [
-        { value: 250, label: t.achievement.products },
-        { value: 10000, label: t.achievement.clients },
-        { value: 150, label: t.achievement.partners },
-        { value: 25, label: t.achievement.branches },
+        { value: 2500, label: t.achievement.products },
+        { value: 30000, label: t.achievement.clients },
+        { value: 20, label: t.achievement.partners },
+        { value: 5, label: t.achievement.branches },
     ];
 
     return (
