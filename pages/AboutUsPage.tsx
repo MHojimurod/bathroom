@@ -1,9 +1,9 @@
 import React from "react";
 import { useLanguage } from "../context/LanguageContext";
+import { PARTNERS } from "@/constants";
 
 const AboutUsPage: React.FC = () => {
   const { t } = useLanguage();
-  const parts = t.aboutUs.advantageDesc.split("{name}");
   const quote = t.aboutUs.quote
     .replace("{name}", "Casabella")
     .replace(
@@ -11,8 +11,12 @@ const AboutUsPage: React.FC = () => {
       '<span class="font-semibold text-gray-900">$1</span>'
     );
 
+  // Insert brand name into advantage description
+  const parts = t.aboutUs.advantageDesc.split("{name}");
+
   return (
     <div className="bg-white">
+      {/* Banner */}
       <div className="relative h-80 bg-gray-900">
         <img
           src="/images/about-us-banner.png"
@@ -27,21 +31,15 @@ const AboutUsPage: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-6 py-20">
-      <section className="bg-gray-50 -mx-6 px-6 py-16 text-center mb-20">
-      <p
-              className="text-lg md:text-xl text-gray-700 leading-relaxed italic"
-              dangerouslySetInnerHTML={{ __html: quote }}
-            />
+        {/* Quote */}
+        <section className="bg-gray-50 -mx-6 px-6 py-16 text-center mb-20">
+          <p
+            className="text-lg md:text-xl text-gray-700 leading-relaxed italic"
+            dangerouslySetInnerHTML={{ __html: quote }}
+          />
         </section>
-        {/* <section className="flex justify-center mb-20">
-          <div className="relative bg-gray-50 border-l-4 border-purple-500 rounded-xl shadow-md p-6 max-w-3xl">
-            <p
-              className="text-lg md:text-xl text-gray-700 leading-relaxed italic"
-              dangerouslySetInnerHTML={{ __html: quote }}
-            />
-          </div>
-        </section> */}
-        {/* Our Story & Philosophy */}
+
+        {/* Mission / Our Story */}
         <section className="mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="prose lg:prose-lg max-w-none text-gray-600">
@@ -65,7 +63,7 @@ const AboutUsPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Our Mission & Vision */}
+        {/* Vision */}
         <section className="mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="md:order-2 prose lg:prose-lg max-w-none text-gray-600">
@@ -89,6 +87,7 @@ const AboutUsPage: React.FC = () => {
           </div>
         </section>
 
+        {/* Our Advantage / Why CasaBella */}
         <section className="mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="prose lg:prose-lg max-w-none text-gray-600">
@@ -101,10 +100,34 @@ const AboutUsPage: React.FC = () => {
             <div>
               <img
                 src="/images/about-us-3.jpg"
-                alt="Our design process"
+                alt="Attention to detail"
                 className="rounded-lg shadow-xl"
               />
             </div>
+          </div>
+        </section>
+
+        {/* Our Partners */}
+        <section className="mb-10">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-800 mb-3">
+              {t.aboutUs.ourPartners}
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center justify-items-center">
+            {PARTNERS.map((partner) => (
+              <div
+                key={partner.name}
+                className="flex items-center justify-center"
+              >
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="h-10 md:h-12 object-contain grayscale hover:grayscale-0 transition"
+                />
+              </div>
+            ))}
           </div>
         </section>
       </div>
