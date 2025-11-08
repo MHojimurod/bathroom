@@ -49,7 +49,7 @@ const AboutUsPage: React.FC = () => {
                 {t.aboutUs.missionTitle}
               </h2>
               <p className="text-justify">
-                <span className="font-semibold text-gray-700">CasaBellaUz</span>
+                <span className="font-semibold text-gray-700">CasaBella</span>
                 {t.aboutUs.missionDesc}
               </p>
               <br />
@@ -73,7 +73,7 @@ const AboutUsPage: React.FC = () => {
                 {t.aboutUs.visionTitle}
               </h2>
               <p className="text-justify">
-                <span className="font-semibold text-gray-700">CasaBellaUz</span>
+                <span className="font-semibold text-gray-700">CasaBella</span>
                 {t.aboutUs.visionDesc}
               </p>
               <br />
@@ -94,7 +94,7 @@ const AboutUsPage: React.FC = () => {
             <div className="prose lg:prose-lg max-w-none text-gray-600">
               <p className="text-justify">
                 {parts[0]}
-                <span className="font-semibold text-gray-700">CasaBellaUz</span>
+                <span className="font-semibold text-gray-700">CasaBella</span>
                 {parts[1]}
               </p>
             </div>
