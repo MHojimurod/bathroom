@@ -91,32 +91,16 @@ const PartnershipPage: React.FC = () => {
         <p>{t.partner.quote}</p>
         </section>
 
-        {/* Why Partner with Us */}
         <section className="grid md:grid-cols-2 gap-16 items-center mb-20">
           <div>
             <p className="text-justify"> {t.partner.slogan}</p>
-            {/* <h2 className="text-3xl font-bold text-gray-800 mb-6">
-              {t.partner.offer}
-            </h2>
-            <ul className="space-y-4 text-gray-600 list-disc list-inside">
-              <li>{t.partner.offer1}</li>
-              <li>{t.partner.offer2}</li>
-              <li>{t.partner.offer3}</li>
-              <li>{t.partner.offer4}</li>
-            </ul> */}
+            
           </div>
           <img
             src="/images/partner.png"
             className="rounded-lg shadow-xl"
             alt="Collaboration"
           />
-        </section>
-
-        {/* Who We Work With */}
-        <section className="bg-gray-50 -mx-6 px-6 py-16 text-center mb-20">
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            {t.partner.slogan}
-          </p>
         </section>
 
         <section>
