@@ -9,10 +9,10 @@ import type { HeroSlide } from "../types";
 const MainPage: React.FC = () => {
   const { t } = useLanguage();
   const WHAT_WE_SELL = [
-    { name: t.offer.offer1, image: "/images/photo1.png" },
-    { name: t.offer.offer2, image: "/images/photo2.png" },
-    { name: t.offer.offer3, image: "/images/photo3.png" },
-    { name: t.offer.offer4, image: "/images/photo4.png" },
+    { name: t.offer.offer1, image: "/images/photo1.webp" },
+    { name: t.offer.offer2, image: "/images/photo2.webp" },
+    { name: t.offer.offer3, image: "/images/photo3.webp" },
+    { name: t.offer.offer4, image: "/images/photo4.webp" },
   ];
 
   const MAIN_HERO_SLIDES: HeroSlide[] = [

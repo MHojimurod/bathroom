@@ -73,7 +73,7 @@ const PartnershipPage: React.FC = () => {
     <div className="bg-white">
       <div className="relative h-80 bg-gray-900">
         <img
-          src="/images/partner-banner.png"
+          src="/images/partner-banner.webp"
           alt="Partnership"
           className="w-full h-full object-cover opacity-40"
         />
@@ -97,7 +97,7 @@ const PartnershipPage: React.FC = () => {
             
           </div>
           <img
-            src="/images/partner.png"
+            src="/images/partner.webp"
             className="rounded-lg shadow-xl"
             alt="Collaboration"
           />

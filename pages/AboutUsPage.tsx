@@ -19,7 +19,7 @@ const AboutUsPage: React.FC = () => {
       {/* Banner */}
       <div className="relative h-80 bg-gray-900">
         <img
-          src="/images/about-us-banner.png"
+          src="/images/about-us-banner.webp"
           alt="Craftsmanship"
           className="w-full h-full object-cover opacity-40"
         />

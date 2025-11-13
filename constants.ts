@@ -8,7 +8,7 @@ export const ENDPOINT = 'https://api.casabella.uz'
 
 export const PRODUCTS_HERO_SLIDES: HeroSlide[] = [
   {
-    image: "/images/product-slide1.png",
+    image: "/images/product-slide1.webp",
     headline: "",
     subHeadline: "",
     ctaText: "",
