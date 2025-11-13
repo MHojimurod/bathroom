@@ -73,7 +73,8 @@
     "visionDesc": "  5 ta zamonaviy filialga ega va do'konlarimizning umumiy maydoni ming kvadrat metrga yetib qoldi. Ammo bu — faqat boshlanish. Biz to'xtamaymiz, har kuni yanada yaxshilanish, yangilik kiritish va mijozlarimizga eng yuqori darajadagi qulaylik yaratish uchun ishlaymiz.",
     "advantageDesc": "{name}ning asosiy ustunliklaridan biri — \"namuna\" xizmati, ya'ni siz tanlayotgan mahsulotni o'rnatilishidan oldin amalda haqiqiy mahsulotlar hammomxonangizda qanaqa ko'rinishini ko'rish imkoniyati. Bundan tashqari, biz O'zbekistonda hali mavjud bo'lmagan eng sifatli, eksklyuziv va premium brendlar bilan hamkorliklarni yo'lga qo'ymoqdamiz.",
     "quote": "“{name} — bu <b>komfort</b>, <b>sifat</b>, <b>did</b> va <b>ishonch</b>. Biz sizning uyingizdagi har bir tafsilotni mukammallikka yetkazishga yordam beramiz.”",
-    "ourPartners": "Bizning hamkorlarimiz"
+    "ourPartners": "Bizning hamkorlarimiz",
+    "ourPartnersDesc": ""
   },
   "partner": {
     "title": "Casabella — ishonch, sifat va didni qadrlaydigan hamkorlar uchun yaratilgan makon",

@@ -74,7 +74,8 @@
     "visionDesc2": "Every product you choose comes with a guarantee of quality and comfort. We always listen to your needs and strive to create perfection in every detail.",
     "advantageDesc": "One of {name}'s main advantages is the “sample” service, which allows you to see how the actual products you choose will look in your bathroom before installation. In addition, we are establishing partnerships with the highest-quality, exclusive, and premium brands that are not yet available in Uzbekistan",
     "quote": "“{name} means <b>comfort</b>, <b>quality</b>, <b>taste</b> and <b>trust</b>. We help you perfect every detail of your home.”",
-    "ourPartners": "Our Partners"
+    "ourPartners": "Our Partners",
+    "ourPartnersDesc": ""
   },
   "partner": {
     "title": "Casabella — a place created for partners who value trust, quality, and taste.",

@@ -113,22 +113,40 @@ const AboutUsPage: React.FC = () => {
             <h2 className="text-3xl font-bold text-gray-800 mb-3">
               {t.aboutUs.ourPartners}
             </h2>
+            <p className="text-gray-500 text-sm md:text-base">
+    {t.aboutUs.ourPartnersDesc}
+  </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center justify-items-center">
-            {PARTNERS.map((partner) => (
-              <div
-                key={partner.name}
-                className="flex items-center justify-center"
-              >
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="h-10 md:h-12 object-contain grayscale hover:grayscale-0 transition"
-                />
-              </div>
-            ))}
-          </div>
+          {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 justify-items-center">
+  {PARTNERS.map((partner) => (
+    <div
+      key={partner.name}
+      className="bg-white p-6 md:p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center w-36 h-24 md:w-40 md:h-28"
+    >
+      <img
+        src={partner.logo}
+        alt={partner.name}
+        className="h-10 md:h-12 object-contain grayscale hover:grayscale-0 transition"
+      />
+    </div>
+  ))}
+</div> */}
+
+<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 justify-items-center">
+    {PARTNERS.map((partner) => (
+      <div
+        key={partner.name}
+        className="flex items-center justify-center w-40 h-28 md:w-48 md:h-32"
+      >
+        <img
+          src={partner.logo}
+          alt={partner.name}
+          className="h-14 md:h-16 object-contain grayscale hover:grayscale-0 transition"
+        />
+      </div>
+    ))}
+  </div>
         </section>
       </div>
     </div>
